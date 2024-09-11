@@ -28,11 +28,11 @@ const Navbar = () => {
         </div>
       </div>
         <div className={`flex-col md:flex-row md:flex items-center justify-center ${isOpen ? 'flex' : 'hidden'} md:flex md:items-center md:gap-16 text-2xl`}>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#technologies">Technologies</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" className='hover:bg-gray-600/60 active:bg-gray-500/60 focus:outline-none focus:ring focus:ring-gray-300/60 ... py-3 px-3 rounded-3xl'>Home</a>
+            <a href="#about" className='hover:bg-gray-600/60 active:bg-gray-500/60 focus:outline-none focus:ring focus:ring-gray-300/60 ... py-3 px-3 rounded-3xl'>About</a>
+            <a href="#technologies" className='hover:bg-gray-600/60 active:bg-gray-500/60 focus:outline-none focus:ring focus:ring-gray-300/60 ... py-3 px-3 rounded-3xl'>Technologies</a>
+            <a href="#projects" className='hover:bg-gray-600/60 active:bg-gray-500/60 focus:outline-none focus:ring focus:ring-gray-300/60 ... py-3 px-3 rounded-3xl'>Projects</a>
+            <a href="#contact" className='hover:bg-gray-600/60 active:bg-gray-500/60 focus:outline-none focus:ring focus:ring-gray-300/60 ... py-3 px-3 rounded-3xl'>Contact</a>
         </div>
     </div>
   )

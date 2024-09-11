@@ -5,6 +5,8 @@ import About from './components/About'
 import Technologies from './components/Technologies'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import ProjectsCarousel from './components/Projects'
+// import ProjectsCarousel from './components/Projects'
 
 const App = () => {
   return (
