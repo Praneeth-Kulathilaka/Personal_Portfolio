@@ -1,7 +1,8 @@
 import React from 'react'
 import { HERO_CONTENT } from '../constants'
-import prophoto from '../assets/IMG_2420.jpg'
+import prophoto from '../assets/IMG_2420.png'
 import { motion } from 'framer-motion'
+import cv from '../assets/Praneeth-CV.pdf'
 
 const container = (delay) => ({
     hidden: {x: -100, opacity: 0},
@@ -37,10 +38,15 @@ const Hero = () => {
                         animate="visible"
                         className='text-justify my-2 max-w-xl py-6 font-light tracking-tighter'>{HERO_CONTENT}
                     </motion.p>
+                    {/* <motion.div className='relative inline-flex group my-1'>
+                        <div className='absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF6756] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200'></div>
+                        <a href="/" role='button' className='w-15 h-10 inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary-color rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900'>Download Resume</a>
+                    </motion.div> */}
+                    <a href={cv} role='button' className='w-15 h-10 inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary-color rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 bg-gradient-to-r from-purple-900 to-pink-500 ...'>Download Resume</a>
                 </div>
             </div>
-            <div className='w-full lg:w-1/2 lg:p-8'>
-                <div className='flex justify-center'>
+            <div className='w-full lg:w-1/2 lg:py-0 lg:top-0 bg-zinc-400/60'>
+                <div className='flex justify-center py-0 h-96'>
                     <motion.img 
                         initial={{ x:100, opacity:0 }}
                         animate={{ x:0, opacity:1 }}
