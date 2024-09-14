@@ -11,7 +11,7 @@ const Projects = () => {
             transition={{ duration: 0.5, }}
             className='my-20 text-center text-4xl'>Projects</motion.h1>
         
-            <div className='grid grid-flow-col grid-cols-2 grid-rows-2'>
+            <div className='grid grid-flow-col grid-cols-3'>
                 {PROJECTS.map((project,index)=>(
                     <div key={index} className='mb-8 lg:justify-between'>
                         {/* <motion.div 
