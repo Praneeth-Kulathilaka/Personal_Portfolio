@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <div className='border-b border-neutral-900 h-full pb-24 lg:mb-4'>
         <div className='flex flex-wrap'>
-            <div className='w-full lg:w-1/2 space-x-2 py-14'>
+            <div className='w-full lg:w-1/2 space-x-2 py-10'>
                 <div className='flex flex-col items-center lg:items-start '>
                     <motion.h1
                         variants={container(0)}
@@ -54,7 +54,7 @@ const Hero = () => {
                     <a href={cv} role='button' className='w-15 h-10 inline-flex items-center justify-center px-8 py-6 text-sm font-bold text-white transition-all duration-200 bg-primary-color rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 bg-gradient-to-r from-purple-900 to-pink-500 border-4 border-white/100 hover:border-purple-600 hover:scale-105 hover:drop-shadow-xl'>Download CV</a>
                 </div>
             </div>
-            <div className='relative rounded-full w-full lg:w-1/2 lg:top-0'>
+            <div className='relative rounded-full w-full lg:w-1/2 lg:top-0 py-2'>
                 <div className='flex justify-center lg:pb-0 h-96 '>
                     <motion.img
                         className='rounded-full border-4 border-purple-600/70' 

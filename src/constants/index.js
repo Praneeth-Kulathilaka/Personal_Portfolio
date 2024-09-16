@@ -40,25 +40,28 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Residence Management System",
     image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    link: "https://github.com/Praneeth-Kulathilaka/Personal_Portfolio",
   },
   {
     title: "Task Management App",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "A Residence Management System to simplify residential management operations as our second year software project, under the mentorship of Creative Software. The system enables management staff to efficiently handle tasks such as finance management, resident management, maintenance scheduling, reservation handling, and other administrative activities. It also facilitates seamless communication and interaction between residents and management staff.",
+    technologies: ["ReactJs", "NodeJs", "MySQL", "Flutter", "Material UI", "PayHere Gateway"],
+    link: "https://github.com/Praneeth-Kulathilaka/Personal_Portfolio",
   },
   {
     title: "Portfolio Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A personal portfolio website to showcase my projects, skills, and experience. The portfolio highlights my expertise in frontend development and provides an interactive and responsive user experience.",
+    technologies: [ "React", "Tailwind", "Deployed with netlify"],
+    link: "https://github.com/Praneeth-Kulathilaka/Personal_Portfolio",
   },
   {
     title: "Blogging Platform",
@@ -66,6 +69,7 @@ export const PROJECTS = [
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    link: "https://github.com/Praneeth-Kulathilaka/Personal_Portfolio",
   },
   
 ];
