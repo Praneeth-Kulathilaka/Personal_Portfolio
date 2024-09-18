@@ -1,0 +1,103 @@
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+
+const Projects = () => {
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(0); // Initialize with the first project
+    const projectsPerPage = 1; // Only show one project per page
+
+    // Get the current project to display based on the current index
+    const currentProject = PROJECTS.slice(currentProjectIndex, currentProjectIndex + projectsPerPage)[0];
+
+    const handleNext = () => {
+        if (currentProjectIndex < PROJECTS.length - 1) {
+            setCurrentProjectIndex(currentProjectIndex + 1);
+        }
+    };
+
+    const handlePrev = () => {
+        if (currentProjectIndex > 0) {
+            setCurrentProjectIndex(currentProjectIndex - 1);
+        }
+    };
+
+    const handleClick = (link) => {
+        console.log("Called", link);
+        window.location.href = link;
+    };
+
+    return (
+        <div className='border-b border-neutral-900 pb-4'>
+            <motion.h1
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 0.5 }}
+                className='my-20 text-center text-4xl'
+            >
+                Projects
+            </motion.h1>
+
+            <div className='flex flex-col items-center'>
+                <div className='mb-8 lg:w-1/4'>
+                    <motion.div
+                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, x: -100 }}
+                        transition={{ duration: 0.5 }}
+                        className='w-full object-center'
+                    >
+                        <img
+                            src={currentProject.image}
+                            width={150}
+                            height={150}
+                            alt={currentProject.title}
+                            className='mb-6 rounded'
+                        />
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, x: 100 }}
+                        transition={{ duration: 0.5 }}
+                        className='w-full max-w-xl lg:w-3/4'
+                    >
+                        <h6>{currentProject.title}</h6>
+                        <p className='text-justify'>{currentProject.description}</p>
+                        {currentProject.technologies.map((tech, index) => (
+                            <span
+                                key={index}
+                                className='mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900 text-justify'
+                            >
+                                {tech}
+                            </span>
+                        ))}
+                    </motion.div>
+                    <div className='mt-4'>
+                        <button
+                            onClick={() => handleClick(currentProject.link)}
+                            className="rounded-2xl bg-transparent border-4 border-neutral-700 font-semibold px-4 py-2 transition-all duration-200 hover:bg-gradient-to-r from-purple-900 to-pink-500 hover:border-purple-600"
+                        >
+                            Get the code
+                        </button>
+                    </div>
+                </div>
+
+                <div className='flex justify-between w-full mt-8'>
+                    <button
+                        onClick={handlePrev}
+                        disabled={currentProjectIndex === 0}
+                        className='px-4 py-2 bg-gray-300 rounded disabled:opacity-50'
+                    >
+                        Previous
+                    </button>
+                    <button
+                        onClick={handleNext}
+                        disabled={currentProjectIndex >= PROJECTS.length - 1}
+                        className='px-4 py-2 bg-gray-300 rounded disabled:opacity-50'
+                    >
+                        Next
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Projects;
