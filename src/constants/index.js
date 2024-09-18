@@ -43,8 +43,8 @@ export const PROJECTS = [
     title: "Residence Management System",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A Residence Management System to simplify residential management operations as our second year software project, under the mentorship of Creative Software. The system enables management staff to efficiently handle tasks such as finance management, resident management, maintenance scheduling, reservation handling, and other administrative activities. It also facilitates seamless communication and interaction between residents and management staff.",
+    technologies: ["React Js", "Node Js", "MySQL", "Material UI", "PayHere Gateway"],
     link: "https://github.com/Praneeth-Kulathilaka/Personal_Portfolio",
   },
   {

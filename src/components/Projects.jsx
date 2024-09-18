@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { PROJECTS } from '../constants'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
 
 const Projects = () => {
@@ -38,13 +38,20 @@ const Projects = () => {
     </motion.h1>
 
     <div className='flex flex-col items-center justify-center'>
-        <div className='mb-8 flex flex-col items-center text-center'>    
+        <AnimatePresence mode='wait'>
+        <motion.div 
+            key={currentProjectIndex} // Use index as the key to trigger animation
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+            className='mb-8 flex flex-col items-center text-center'>    
             <img
                 src={currentProject.image}
                 width={150}
                 height={150}
                 alt={currentProject.title}
-                className='mb-6 rounded justify-center'
+                className='mb-6 rounded justify-center h-40 w-40'
             />
             
             <motion.div
@@ -58,7 +65,7 @@ const Projects = () => {
                 {currentProject.technologies.map((tech, index) => (
                     <span
                         key={index}
-                        className='mr-2 rounded border-neutral-400 bg-neutral-900 px-2 py-1 text-sm font-medium text-center'
+                        className='mr-2 mt-4 rounded bg-gradient-to-r from-purple-900 via-purple-600 to-pink-500 bg-clip-text text-transparent hover:border-2 hover:border-purple-900 hover:scale-150 px-2 py-1 text-sm font-medium text-center'
                     >
                         {tech}
                     </span>
@@ -72,20 +79,21 @@ const Projects = () => {
                     Get the code
                 </button>
             </div>
-        </div>
+        </motion.div>
+        </AnimatePresence>
 
         <div className='flex justify-between w-full mt-8'>
             <button
                 onClick={handlePrev}
                 disabled={currentProjectIndex === 0}
-                className='px-4 py-2 bg-gray-300/15 rounded disabled:opacity-50'
+                className= 'px-4 py-2 bg-gray-300/10 border-2 border-neutral-700 rounded disabled:opacity-50 hover:scale-150 hover:bg-neutral-900 transition-all duration-200 hover:border-4 hover:border-purple-600'
             >
                 <MdNavigateBefore />
             </button>
             <button
                 onClick={handleNext}
                 disabled={currentProjectIndex >= PROJECTS.length - 1}
-                className='px-4 py-2 bg-gray-300/10 rounded disabled:opacity-50'
+                className='px-4 py-2 bg-gray-300/10 border-2 border-neutral-700 rounded disabled:opacity-50 hover:scale-150 hover:bg-neutral-900 transition-all duration-200 hover:border-4 hover:border-purple-600'
             >
                 <MdNavigateNext />
             </button>
