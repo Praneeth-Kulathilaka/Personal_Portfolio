@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from "../assets/kevinRushLogo.png"
-import Projects from './Projects'
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState();
