@@ -19,9 +19,9 @@ const Navbar = () => {
 
           <button onClick={toggleMenu} className=' hover:text-gray-600 focus:outline-none'>
             {isOpen ? (
-              <FaTimes className="w-6 h-6" /> // Close icon when menu is open
+              <FaTimes className="w-6 h-6" /> 
             ) : (
-              <FaBars className="w-6 h-6" /> // Hamburger icon when menu is closed
+              <FaBars className="w-6 h-6" /> 
             )}
           </button>
         </div>
