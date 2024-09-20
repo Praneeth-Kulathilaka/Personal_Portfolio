@@ -1,43 +1,12 @@
 import project1 from "../assets/project/project-1.jpg";
 import project2 from "../assets/project/project-2.jpg";
 import project3 from "../assets/project/project-3.jpg";
-import project4 from "../assets/project/project-4.jpg";
+import project4 from "../assets/project/project-4.PNG";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
 export const ABOUT_TEXT = `As a dedicated and enthusiastic undergraduate, I am passionate about coding, problem-solving, and continuously learning new technologies. My experience includes developing and debugging software applications, collaborating in Agile environments, and employing best practices. As a full-stack developer with a slight preference for backend over frontend, I am eager to apply my knowledge and skills to real-world challenges and grow as a professional in the field of Information Technology.
 `;
-
-export const EXPERIENCES = [
-  {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
-];
 
 export const PROJECTS = [
   {
@@ -46,31 +15,31 @@ export const PROJECTS = [
     description:
       "A Residence Management System to simplify residential management operations as our second year software project, under the mentorship of Creative Software. The system enables management staff to efficiently handle tasks such as finance management, resident management, maintenance scheduling, reservation handling, and other administrative activities. It also facilitates seamless communication and interaction between residents and management staff.",
     technologies: ["React Js", "Node Js", "MySQL", "Material UI", "PayHere Gateway"],
-    link: "https://github.com/Praneeth-Kulathilaka/Personal_Portfolio",
+    link: "https://github.com/orgs/UoM-2023/repositories",
   },
   {
-    title: "Task Management App",
+    title: "Personal Portfolio",
     image: project2,
     description:
-      "A Residence Management System to simplify residential management operations as our second year software project, under the mentorship of Creative Software. The system enables management staff to efficiently handle tasks such as finance management, resident management, maintenance scheduling, reservation handling, and other administrative activities. It also facilitates seamless communication and interaction between residents and management staff.",
-    technologies: ["ReactJs", "NodeJs", "MySQL", "Flutter", "Material UI", "PayHere Gateway"],
+      "A personal portfolio website to showcase my projects, skills, and experience. The portfolio highlights my expertise in frontend development and provides an interactive and responsive user experience",
+    technologies: ["ReactJs", "Tailwind CSS", "Deployed with netlify"],
     link: "https://github.com/Praneeth-Kulathilaka/Personal_Portfolio",
   },
   {
-    title: "Portfolio Website",
+    title: "Rover 4.3",
     image: project3,
     description:
-      "A personal portfolio website to showcase my projects, skills, and experience. The portfolio highlights my expertise in frontend development and provides an interactive and responsive user experience.",
-    technologies: [ "React", "Tailwind", "Deployed with netlify"],
-    link: "https://github.com/Praneeth-Kulathilaka/Personal_Portfolio",
+      "A web-controlled rover as a Level 1 hardware project, capable of detecting harmful gases and capturing live video feeds. The rover streams video and provides real-time alerts for critical situations through a web interface, enhancing remote monitoring and safety in various environments.",
+    technologies: [ "Arduino", "EasyEDA(PCB Design)", "Wireless Communication(WIFI)", "HTML", "CSS", "JavaScript"],
+    link: "https://github.com/Praneeth-Kulathilaka/Rover-4.3",
   },
   {
-    title: "Blogging Platform",
+    title: "MineResQ",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-    link: "https://github.com/Praneeth-Kulathilaka/Personal_Portfolio",
+      "A gas detection and alert system specifically designed for gem mines. The system includes two-way radio communication, real-time gas detection, and alerting functionalities to enhance safety and prevent hazardous incidents within mining environments.",
+    technologies: ["Arduino", "EasyEDA(PCB Design)", "Wireless Communication(Radio)"],
+    link: "https://github.com/Praneeth-Kulathilaka/MineResQ",
   },
   
 ];
