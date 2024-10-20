@@ -10,6 +10,7 @@ import mongo from '../assets/MongoDB.png'
 import next from '../assets/nextjs-icon.png'
 import nest from '../assets/nestjs-vector-logo-seeklogo/nest.svg'
 import graph from '../assets/icons8-graphql-color/graph.png'
+import asp from '../assets/asp.png'
 
 import { motion } from 'framer-motion';
 
@@ -29,13 +30,13 @@ const Technologies = () => {
         className='my-20 text-center text-4xl'>
         Technologies
       </motion.h1>
-      <div className='flex gap-4 items-center'>
+      <div className='grid gap-4 items-center'>
         <div className='rounded-2xl p-6 items-center w-full'>
-          <div className='grid grid-cols-2 gap-4 lg:grid-cols-8 justify-center items-center'>
-            {[java, python, cLogo, reactIcon, nodeIcon, next, nest, graph, mysql, mongo, mssql].map((logo, index) => (
+          <div className='grid grid-cols-2 gap-4 lg:grid-cols-8 justify-center items-center grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); align-items: center;'>
+            {[java, python, cLogo, reactIcon, nodeIcon, next, asp, graph, mysql, mongo, mssql].map((logo, index) => (
               <motion.div 
                 key={index}
-                className='flex items-center justify-center transition-all duration-100'
+                className='grid items-center justify-center transition-all duration-100'
                 variants={logoVariants}
                 initial="initial"
                 animate="animate"
